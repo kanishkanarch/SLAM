@@ -1,5 +1,4 @@
-# Ubuntu-and-ROS
-Ubuntu and ROS installation for beginners
+# Ubuntu and ROS installation for beginners
 
 Newer PCs' hardware quit supporting legacy BIOS boot option and only support UEFI.Thus traditional EXT file system installation for Ubuntu may not work or if it does, Ubuntu may not boot.
 ----------------------------------------------------------------------------------

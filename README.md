@@ -1,6 +1,6 @@
 # Ubuntu and ROS installation for beginners
 
-Newer PCs' hardware quit supporting legacy BIOS boot option and only support UEFI.Thus traditional EXT file system installation for Ubuntu may not work or if it does, Ubuntu may not boot.
+Newer PCs' hardware quit supporting legacy BIOS boot option from 2020 and only support UEFI.Thus traditional EXT file system installation for Ubuntu may not work or if it does, Ubuntu may not boot. You can check if your PC's hardware supports Legacy BIOS boot option by going inside the BIOS menu.
 ----------------------------------------------------------------------------------
 
 In your Windows, go to Disk Management. Right click the partition in which you want to install Ubuntu. Select Shrink Volume. You'll be asked how much you want to shrink this partition; in other words, how much big you want your Ubuntu size (This size should be atleast 30 GB bigger than what you want your Ubuntu to be). Click OK and then you'll see Unallocated space in the disk. This is where Ubuntu will make all its partitions.

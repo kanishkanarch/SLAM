@@ -2,6 +2,8 @@
 
 In your Windows, go to Disk Management. Right click the partition in which you want to install Ubuntu. Select Shrink Volume. You'll be asked how much you want to shrink this partition; in other words, how much big you want your Ubuntu size (This size should be atleast 30 GB bigger than what you want your Ubuntu to be). Click OK and then you'll see Unallocated space in the disk. This is where Ubuntu will make all its partitions.
 
+Check your computer's RAM. You'll need it in a few minutes. You can see your computer's RAM by right clicking 'This PC' or 'My Computer' inside Windows and opening Properties.
+
 Download two things now. Ubuntu and Flashing software. Ubuntu 16.04 can be downloaded from https://releases.ubuntu.com/16.04/ubuntu-16.04.6-desktop-amd64.iso and flashing software (a very good one is Balena Etcher) can be downloaded from https://github.com/balena-io/etcher/releases/download/v1.5.101/balenaEtcher-Setup-1.5.101.exe. 
 ----------------------------------------------------------------------------------
 Now pick a Flashdrive (Pendrive) and connect it to your PC. Format it with FAT32 option. Aviod Quick Format. When the format is complete, install the software Balena Etcher (or the one which you downloaded). Open it and Flash your Flashdrive with Ubuntu you downloaded (it's actually called Ubuntu image).
@@ -14,7 +16,7 @@ During Ubuntu installation, click "Continue with UEFI" (or a similar prompt, if 
 
 Select 'Free space'. Partitions of free space are done as follows.
 
-1. Swap: Select Primary. Size should be atleast the double of the computer RAM.
+1. Swap: Select Primary. Size should be atleast the double of the computer RAM. You can see your computer's RAM by right clicking 'This PC' or 'My Computer' inside Windows and opening Properties.
 
 Now select the left over free space.
 

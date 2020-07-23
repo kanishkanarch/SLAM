@@ -30,6 +30,6 @@ Again select the leftover free space.
 
 4. Home: Select Logical. This is the partition in which you make all your directories and files. You can use all the remaining space for this partition. Size differs from user to user. Make it big enough so that your directories and files fit without any problems. I've made it 167 GB.
 ----------------------------------------------------------------------------------
-This partition configuration worked for me inside a DELL laptop (such a crap) and thus should also work on your system too.
+This partition configuration worked for me inside a DELL laptop (yes I know, your condolences are with me) and thus should also work on your system too.
 ----------------------------------------------------------------------------------
 ROS distributions can be installed successfully from the ROS Wiki webpage. For instance, ROS Kinetic, which is supported by Ubuntu 16.04, can be installed from http://wiki.ros.org/kinetic/Installation/Ubuntu. Follow the procedure by heart and don't just copy-paste the terminal commands, READ what's the command doing and whether you'll be needing it or not.

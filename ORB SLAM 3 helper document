@@ -1,0 +1,16 @@
+ORB_SLAM-3 helper document:
+1. Camera Calibration, Calibration Gazebo & Slider Publisher packages are required.
+Calibration is done like:
+` 
+rosrun camera_calibration cameracalibrator.py --approximate 0.1 --size 8x6 --square 0.108 right:=/sensors/stereo/right/image_raw left:=/sensors/stereo/left/image_raw right_camera:=/sensors/stereo/right left_camera:=/sensors/stereo/left
+`
+2. SETTINGS file: Camera Matrix = [fx, 0, cx, 0, fy, cy, 0, 0, 1], Distortion coefficients matrix = [k1, k2, p1, p2, 0], camera.bf = fx*(cx-cy)/1000
+3. ORB-SLAM-3 is done like:
+`
+rosrun ORB_SLAM3 Stereo PATH_TO_VOCABULARY PATH_TO_SETTINGS ONLINE_RECTIFICATION /INTERNAL_TOPIC(S):=/EXTERNAL_TOPIC(S)
+`
+And particularly with MML-Bot like:
+`
+rosrun ORB_SLAM3 Stereo /home/kanishk/ros_personal/ORB_SLAM3/Vocabulary/ORBvoc.txt /home/kanishk/ros_personal/mml_ws/src/mml_bot/mml_settings_orb.yaml false /camera/right/image_raw:=/sensors/stereo/right/image_raw /camera/left/image_raw:=/sensors/stereo/left/image_raw
+
+`

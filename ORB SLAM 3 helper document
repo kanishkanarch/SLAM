@@ -1,4 +1,7 @@
 ORB_SLAM-3 helper document:
+
+0. Make sure before you build the `build.sh` & `build_ros.sh` files, you remove the `-j` flags wherever it's written in both these files.
+
 1. Camera Calibration, Calibration Gazebo & Slider Publisher packages are required.
 Calibration is done like:
 ` 

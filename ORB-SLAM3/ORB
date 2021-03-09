@@ -1,1 +1,3 @@
 
+To tweak number of KeyFrames in ORB-SLAM3 point cloud, tweak the line: `if(nRedundantObservations>redundant_th*nMPs)`.
+Increasing or decreasing value of `redundant_th*nMPs` can increase or decrease the number of keyframes, respectively.

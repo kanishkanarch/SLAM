@@ -1,3 +1,4 @@
+// Partly inspired from https://gist.github.com/PrieureDeSion/77c109a074573ce9d13da244e5f82c4d
 #include<ros/ros.h>
 #include<sensor_msgs/Image.h>
 #include<vector>

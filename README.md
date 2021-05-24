@@ -14,14 +14,18 @@ If you're asked to choose from 'Erase Disk and Install Ubuntu' and 'Something el
 
 During Ubuntu installation, click "Continue with UEFI" (or a similar prompt, if prompted). Free space partitions must be done as follows:
 
-Select 'Free space'. Partitions of free space are done as follows.
+Select 'Free space' partition and hit '+' sign to make new partitions out of it. Partitions of free space are done as follows.
 
-1. Swap: Select Primary. Size should be atleast the double of the computer RAM. You can see your computer's RAM by right clicking 'This PC' or 'My Computer' inside Windows and opening Properties.
+1. Swap: Most guides I know of recommend to use double the size of your RAM for your SWAP partition and at least the same amount of memory as your RAM. Technically, you can do without SWAP at all, but it doesn’t hurt to have some SWAP in case your RAM is not that big. Most systems nowadays have at least 8 GB of RAM.
 
-Now select the left over free space.
+The more RAM you have, the less likely you need the SWAP memory. On this computer, I have 8 GB of RAM. Therefore, I use 4 GB for this installation. That should be enough. Choose “Logical” for the partition type and select “swap area” from the drop down menu. Then clock “OK”
 
-2. Root: Select Logical. Size should be atleast 20 GB. Although this size is not official, but is recommemded to keep it this large so your ROS/Gazebo/PointClouds/bag files/Anaconda/VSCode and other softwares work fine and have enough space for their installation (This is the partitions in which you INSTALL your software and not SAVE or RUN them. Don't make it so much big so that you're not left with any space for Home partition, where you SAVE or RUN your softwares' directories or files). 
+Now select the left over free space
 
+
+2. Root: You need the so called “root” partition which hosts all your system files necessary by Ubuntu to function. By default, this partition will also contain your personal files, but here we will create a separate partition only for your personal files, such as your “Downloads” folder or “Music” folder. This is why we need to create two more partitions.
+
+Both partitions will be about 16 GB in size. For the “root” partition, select the “Primary” option for the partition type as this partition needs to be bootable. Then, in the drop down menu, select “Ext4 journaling file system” which is still the default file system for Linux. The mount point must be “/” which stands for the “root” partition.
 Again select the leftover free space.
 
 *3. EFI file system: Select Primary. This is only applicable for systems in which the legacy BIOS isn't supported and only UEFI is supported. Size should be atleast 2 GB, but to be secured of booting problems, I've made this 5 GB.*

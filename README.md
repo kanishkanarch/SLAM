@@ -18,7 +18,7 @@ Select 'Free space' partition and hit '+' sign to make new partitions out of it.
 
 1. Swap: Most guides I know of recommend to use double the size of your RAM for your SWAP partition and at least the same amount of memory as your RAM. Technically, you can do without SWAP at all, but it doesn’t hurt to have some SWAP in case your RAM is not that big. Most systems nowadays have at least 8 GB of RAM.
 
-The more RAM you have, the less likely you need the SWAP memory. On this computer, I have 8 GB of RAM. Therefore, I use 4 GB for this installation. That should be enough. Choose “Logical” for the partition type and select “swap area” from the drop down menu. Then clock “OK”
+The more RAM you have, the less likely you need the SWAP memory. On this computer, I have 8 GB of RAM. Therefore, I use 4 GB for this installation. That should be enough. Choose “Logical” for the partition type and select “swap area” from the drop down menu. Then click “OK”
 
 Now select the left over free space
 
